@@ -1,4 +1,4 @@
-package OrientacaoAObjetos;
+package Calculadora;
 
 
 public class Calculos {
@@ -8,16 +8,16 @@ public class Calculos {
 	    resultado;
 	
 	//método construtor alternativo
-	public Calculos(int o1, int o2) {
-		op1  = o1;
-		op2 = o2;
+	public Calculos(int op1, int op2) {
+		this.op1  = op1;
+		this.op2 = op2;
 	}
 	// gets e sets
-	 void setOp1(int op) { // atribui valores a op1
-		op1 = op;
+	 void setOp1(int op1) { // atribui valores a op1
+		this.op1 = op1;
 	}
-	 void setOp2(int op) {
-		 op2 = op;
+	 void setOp2(int op2) {
+		 this.op2 = op2;
 	 }
 	 int getResultado() {
 		 return resultado;
@@ -35,7 +35,5 @@ public class Calculos {
 	 }
 	 int getOp2() {
 		 return op2;
-	 }
-	 
+	 } 
 }
-

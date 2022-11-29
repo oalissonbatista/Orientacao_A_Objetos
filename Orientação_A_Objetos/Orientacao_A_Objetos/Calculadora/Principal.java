@@ -1,4 +1,4 @@
-package OrientacaoAObjetos;
+package Calculadora;
 
 public class Principal {
 
@@ -12,7 +12,7 @@ public class Principal {
 		
 		c2 = new Calculos(0, 0);
 		c2.setOp1(2);
-		c2.setOp2(4);
+		c2.setOp2(10);
 		c2.somar();
 		
 		System.out.println(c2.getOp1() + " + " + c2.getOp2()+ " = " + c2.getResultado() );
