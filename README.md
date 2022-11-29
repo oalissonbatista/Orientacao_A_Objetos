@@ -1,2 +1,2 @@
-# Orientacao_A_Objetos
+# Orientação a Objetos
 Disciplina de Orientação a objetos - FGA 
