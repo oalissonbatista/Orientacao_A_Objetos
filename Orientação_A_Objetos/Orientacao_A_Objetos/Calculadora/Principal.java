@@ -7,7 +7,7 @@ public class Principal {
 		
 		Calculos c1,
 		            c2;
-		c1 = new Calculos(2,3); //objeto
+		c1 = new Calculos(2,3); //objeto (Quando recebe os valor)
 		c1.somar();
 		
 		c2 = new Calculos(0, 0);
