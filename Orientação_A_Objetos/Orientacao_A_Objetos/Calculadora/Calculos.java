@@ -30,6 +30,14 @@ public class Calculos {
 		 resultado = op1-op2;
 		 return resultado;
 	 }
+	 int multiplicar() {
+		 resultado = op1 * op2;
+		 return resultado;
+	 }
+	 int dividir() {
+		 resultado = op1 / op2;
+		 return resultado;
+	 }
 	 int getOp1 () {
 		 return op1;
 	 }
