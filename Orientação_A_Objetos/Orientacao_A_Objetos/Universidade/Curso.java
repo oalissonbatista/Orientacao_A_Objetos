@@ -12,11 +12,10 @@ public class Curso {
 		this.turno = turno;
 	}
 	
-	void criarCurso() {
-		System.out.println("Curso criado:" + nomeCurso);
+	static void criarCurso() {
 		
 	}
-	void pesquisarAlunos() {
+	static void pesquisarAlunos() {
 		System.out.println("Lista de alunos ns Disciplina");
 		
 		
