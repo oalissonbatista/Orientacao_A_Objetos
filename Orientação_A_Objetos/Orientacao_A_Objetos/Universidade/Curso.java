@@ -11,5 +11,17 @@ public class Curso {
 		this.cargaHCurso = cargaHCurso;
 		this.turno = turno;
 	}
+	
+	void criarCurso() {
+		System.out.println("Curso criado:" + nomeCurso);
+		
+	}
+	void pesquisarAlunos() {
+		System.out.println("Lista de alunos ns Disciplina");
+		
+		
+	}
+	
+
 
 }
