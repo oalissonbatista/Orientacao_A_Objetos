@@ -7,12 +7,12 @@ public class Principal {
 		Scanner sc = new Scanner(System.in);
 		char escolha = 0;
 		System.out.println("Usuário desejar realizar um cálculo? (s/n)");
-		escolha = sc.next().charAt(0);
+		escolha = sc.next().charAt(0);         
 		while (escolha == 's' || escolha == 'S') {
 			Calculos calculo = new Calculos(0, 0);	
 			System.out.println("Informe a operação desejada: (+, -, *, /)");
 			char operacao = sc.next().charAt(0);
-			if (operacao == 43) {
+			if (operacao == 43) {           // importando da tabela ASCII
 				calculo.somar();
 			}else if (operacao == 45) {
 				calculo.subtrair();

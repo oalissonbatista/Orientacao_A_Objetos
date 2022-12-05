@@ -13,14 +13,6 @@ public class Aluno {
 		this.matricula = matricula;
 	}
 	
-	public static void matricularAluno(){
-		
-	}
-	
-	public static void emitirRelatorioAluno() {
-		
-	}
-
 	public String getNomeCompleto() {
 		return nomeCompleto;
 	}

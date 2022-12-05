@@ -27,9 +27,8 @@ public class GestaoAcadêmica {
 				escolhaAluno = sc.nextInt();
 				}while (escolhaAluno < 1|| escolhaAluno > 2);
 			if (escolhaAluno == 1) {
-				Aluno.matricularAluno();
+				
 			}else {
-				Aluno.emitirRelatorioAluno();
 			}
 			
 			
