@@ -11,21 +11,22 @@ public class Principal {
 		while (escolha == 's' || escolha == 'S') {
 			Calculos calculo = new Calculos(0, 0);	
 			System.out.println("Informe a operação desejada: (+, -, *, /)");
-			int operacao = sc.nextInt();
-			if (operacao == 1) {
+			char operacao = sc.next().charAt(0);
+			if (operacao == 43) {
 				calculo.somar();
-			}else if (operacao == 2) {
+			}else if (operacao == 45) {
 				calculo.subtrair();
-			}else if (operacao == 3) {
+			}else if (operacao == 42) {
 				calculo.multiplicar();
-			}else if (operacao == 4){
+			}else if (operacao == 47){
 				calculo.dividir();
 			}
-			System.out.println("Usuário desejar realizar um cálculo? (s/n)");
+			System.out.println("Usuário desejar realizar mais um cálculo? (s/n)");
 			escolha = sc.next().charAt(0);
 		}
 		
 		System.out.println("Encerrando...");
+		
 	
 	}
 
