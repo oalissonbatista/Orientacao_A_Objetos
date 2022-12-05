@@ -4,35 +4,29 @@ import java.util.Scanner;
 public class Principal {
 
 	public static void main(String[] args) {
-		// Definição das referências
-		int escolha = 0;
 		Scanner sc = new Scanner(System.in);
-		Calculos calc,                     // referencias para objetos do tipo Calculo      
-		         c2;
-		calc = new Calculos(2,3); //objeto (Quando recebe os valores)
-		System.out.println("digite os valores: \n");
-		while (escolha > 4 || escolha < 1) { 
-			System.out.println("Digite:\n"
-				             + "[1] para Somar\n"
-				             + "[2] para Subtrair\n"
-				             + "[3] para multiplicar\n"
-				             + "[4] para dividir");
-			escolha = sc.nextInt();
-			if (escolha == 1) {
-				calc.somar();
-				System.out.println(calc.getOp1() + " + " + calc.getOp2()+ " = " + calc.getResultado());
-			} else if (escolha == 2) {
-				calc.subtrair();
-				System.out.println(calc.getOp1() + " - " + calc.getOp2()+ " = " + calc.getResultado());
-			} else if (escolha == 3) {
-				calc.multiplicar();
-				System.out.println(calc.getOp1() + " * " + calc.getOp2()+ " = " + calc.getResultado());
-			}else if (escolha == 4) {
-				calc.dividir();
-				System.out.println(calc.getOp1() + " / " + calc.getOp2()+ " = " + calc.getResultado());
+		char escolha = 0;
+		System.out.println("Usuário desejar realizar um cálculo? (s/n)");
+		escolha = sc.next().charAt(0);
+		while (escolha == 's' || escolha == 'S') {
+			Calculos calculo = new Calculos(0, 0);	
+			System.out.println("Informe a operação desejada: (+, -, *, /)");
+			int operacao = sc.nextInt();
+			if (operacao == 1) {
+				calculo.somar();
+			}else if (operacao == 2) {
+				calculo.subtrair();
+			}else if (operacao == 3) {
+				calculo.multiplicar();
+			}else if (operacao == 4){
+				calculo.dividir();
 			}
+			System.out.println("Usuário desejar realizar um cálculo? (s/n)");
+			escolha = sc.next().charAt(0);
+		}
+		
+		System.out.println("Encerrando...");
 	
-        }
 	}
 
 }

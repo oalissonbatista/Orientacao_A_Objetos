@@ -1,7 +1,9 @@
 package Calculadora;
 
+import java.util.Scanner;
 
-public class Calculos {
+public class Calculos {	
+	Scanner sc = new Scanner (System.in);
 	//definição dos atributos
 	int op1,
 	    op2,
@@ -9,39 +11,26 @@ public class Calculos {
 	
 	//método construtor alternativo
 	public Calculos(int op1, int op2) {
-		this.op1  = op1;
-		this.op2 = op2;
+		System.out.println("Informe o valor do operando1: ");
+		this.op1  = sc.nextInt();
+		System.out.println("Informe o valor do operando2: ");
+		this.op2 = sc.nextInt();		
 	}
-	// gets e sets
-	 void setOp1(int op1) { // atribui valores a op1
-		this.op1 = op1;
-	}
-	 void setOp2(int op2) {
-		 this.op2 = op2;
+	// métodos 
+	 public void somar() {
+		 this.resultado = this.op1 + this.op2;
+		 System.out.println("O resultado de " + this.op1 + " + " + this.op2 + " é " + this.resultado + "\n");
 	 }
-	 int getResultado() {
-		 return resultado;
+	 public void subtrair() {
+		 this.resultado = this.op1 - this.op2;
+		 System.out.println("O resultado de " + this.op1 + " - " + this.op2 + " é " + this.resultado + "\n");
 	 }
-	 int somar() {
-		 resultado = op1 + op2;
-		 return resultado;
+	 public void multiplicar() {
+		 this.resultado = this.op1 * this.op2;
+		 System.out.println("O resultado de " + this.op1 + " * " + this.op2 + " é " + this.resultado + "\n");
 	 }
-	 int subtrair() {
-		 resultado = op1-op2;
-		 return resultado;
-	 }
-	 int multiplicar() {
-		 resultado = op1 * op2;
-		 return resultado;
-	 }
-	 int dividir() {
-		 resultado = op1 / op2;
-		 return resultado;
-	 }
-	 int getOp1 () {
-		 return op1;
-	 }
-	 int getOp2() {
-		 return op2;
+	 public void dividir() {
+		 this.resultado = this.op1 / this.op2;
+		 System.out.println("O resultado de " + this.op1 + " / " + this.op2 + " é " + this.resultado + "\n");
 	 } 
 }
