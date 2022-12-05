@@ -1,5 +1,4 @@
 package Universidade;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -9,9 +8,7 @@ public class GestaoAcadêmica {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("-------Bem vindo a UNB-------");
-		
-		
-		
+
 		int escolhaClasse;
 		do {
 			System.out.println("Digite a opção desejada:"
@@ -46,7 +43,7 @@ public class GestaoAcadêmica {
 				escolhaCurso = sc.nextInt();
 			}while (escolhaCurso < 1 || escolhaCurso > 2);
 			if (escolhaCurso ==1) {
-				Curso.criarCurso();
+				
 			}else {
 				Curso.pesquisarAlunos();
 			}
@@ -68,54 +65,36 @@ public class GestaoAcadêmica {
 			}
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		ArrayList<String> disciplinas = new ArrayList<String>();	
-		
-		
-		
+		ArrayList<Disciplina> disciplinas = new ArrayList<Disciplina>();	
+	
 		Disciplina Matematica = new Disciplina(null, null, null, 0);
-		Matematica.cargaDisciplina = 60;
-		Matematica.codigoDisciplina = "FGA-1234";
-		Matematica.professor = "Glauco";
-		Matematica.nomeDisciplina = "Matematica";
+		////Matematica.setCarga();
+		////Matematica.codigoDisciplina = "FGA-1234";
+		//Matematica.setProfessor();  // pedindo ao usuario o nome do professor
+		////Matematica.nomeDisciplina = "Matematica";
 		//Matematica.status();
-		disciplinas.add(Matematica.nomeDisciplina);
+		//disciplinas.add(Matematica.nomeDisciplina);
 		
 		System.out.println("------------------------------");
 		
-		Disciplina Metodos = new Disciplina(null, null, null, 0);
-		Metodos.cargaDisciplina = 60;
-		Metodos.codigoDisciplina= "FGA-034";
-		Metodos.professor = "Luciano";
-		Metodos.nomeDisciplina = "Métodos Numéricos";
+		//Disciplina Metodos = new Disciplina(null, null, null, 0);
+		//Metodos.cargaDisciplina = 60;
+        //Metodos.codigoDisciplina= "FGA-034";
+		//Metodos.professor = "Luciano";
+		//Metodos.nomeDisciplina = "Métodos Numéricos";
 		//Metodos.status();
-		disciplinas.add(Metodos.nomeDisciplina);
+		//disciplinas.add(Metodos.nomeDisciplina);
 		
-		Disciplina OO = new Disciplina(null, null, null, 0);
+		//Disciplina OO = new Disciplina(null, null, null, 0);
 		//OO.setNomeDisciplina(null);
 		//OO.status();
 		//disciplinas.add(OO.nomeDisciplina);
-
 		
-		System.out.println(disciplinas);
+		
+		//Disciplina FAC = new Disciplina(null, null, null, 0);
+		//FAC.status();
+		
+		
 	}
 
 
