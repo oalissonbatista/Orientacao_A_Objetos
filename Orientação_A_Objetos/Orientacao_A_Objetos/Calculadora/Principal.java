@@ -12,13 +12,13 @@ public class Principal {
 			Calculos calculo = new Calculos(0, 0);	
 			System.out.println("Informe a operação desejada: (+, -, *, /)");
 			char operacao = sc.next().charAt(0);
-			if (operacao == 43) {           // importando da tabela ASCII
+			if (operacao == '+') {           // importando da tabela ASCII
 				calculo.somar();
-			}else if (operacao == 45) {
+			}else if (operacao == '-') {
 				calculo.subtrair();
-			}else if (operacao == 42) {
+			}else if (operacao == '*') {
 				calculo.multiplicar();
-			}else if (operacao == 47){
+			}else if (operacao == '/'){
 				calculo.dividir();
 			}
 			System.out.println("Usuário desejar realizar mais um cálculo? (s/n)");
