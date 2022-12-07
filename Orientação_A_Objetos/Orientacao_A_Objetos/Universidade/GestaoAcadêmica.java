@@ -1,5 +1,4 @@
 package Universidade;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GestaoAcadêmica {
@@ -27,6 +26,9 @@ public class GestaoAcadêmica {
 				escolhaAluno = sc.nextInt();
 				}while (escolhaAluno < 1|| escolhaAluno > 2);
 			if (escolhaAluno == 1) {
+				System.out.println("Digite os dados do aluno a ser matriculado: ");
+				Aluno aluno1 = new Aluno(null, null, 0);
+				System.out.println("Aluno -"+ aluno1.getNomeCompleto() +"- Matriculado!");
 				
 			}else {
 			}
@@ -37,14 +39,16 @@ public class GestaoAcadêmica {
 			int escolhaCurso;
 			do {
 				System.out.println("Digite a opcao desejada:"
-						         + "[1] para criar Curso"
-						         + "[2] para pesquisar alunos");
+						         + "\n[1] para criar Curso"
+						         + "\n[2] para pesquisar alunos");
 				escolhaCurso = sc.nextInt();
 			}while (escolhaCurso < 1 || escolhaCurso > 2);
 			if (escolhaCurso ==1) {
+				Curso curso1 = new Curso(null, 0, null);
+				System.out.println("Curso - " + curso1.getNomeCurso()+ " - criado");
 				
 			}else {
-				Curso.pesquisarAlunos();
+				
 			}
 			
 		}else {
@@ -57,41 +61,12 @@ public class GestaoAcadêmica {
 				escolhaDisciplina = sc.nextInt();
 			} while ( escolhaDisciplina <1 || escolhaDisciplina >2);
 			if (escolhaDisciplina ==1) {
-				
-				
+				Disciplina disciplina1 = new Disciplina(null, null, null, 0);
+				System.out.println("Disciplina -" + disciplina1.getNomeDisciplina() + "- cadastrado(a)");
 			}else {
 				
 			}
 		}
-		
-		ArrayList<Disciplina> disciplinas = new ArrayList<Disciplina>();	
-	
-		Disciplina Matematica = new Disciplina(null, null, null, 0);
-		////Matematica.setCarga();
-		////Matematica.codigoDisciplina = "FGA-1234";
-		//Matematica.setProfessor();  // pedindo ao usuario o nome do professor
-		////Matematica.nomeDisciplina = "Matematica";
-		//Matematica.status();
-		//disciplinas.add(Matematica.nomeDisciplina);
-		
-		System.out.println("------------------------------");
-		
-		//Disciplina Metodos = new Disciplina(null, null, null, 0);
-		//Metodos.cargaDisciplina = 60;
-        //Metodos.codigoDisciplina= "FGA-034";
-		//Metodos.professor = "Luciano";
-		//Metodos.nomeDisciplina = "Métodos Numéricos";
-		//Metodos.status();
-		//disciplinas.add(Metodos.nomeDisciplina);
-		
-		//Disciplina OO = new Disciplina(null, null, null, 0);
-		//OO.setNomeDisciplina(null);
-		//OO.status();
-		//disciplinas.add(OO.nomeDisciplina);
-		
-		
-		//Disciplina FAC = new Disciplina(null, null, null, 0);
-		//FAC.status();
 		
 		
 	}

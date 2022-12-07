@@ -1,6 +1,9 @@
 package Universidade;
 
+import java.util.Scanner;
+
 public class Aluno {
+	Scanner sc = new Scanner(System.in);
 	String nomeCompleto,
 	       email;
 	int matricula;
@@ -8,13 +11,22 @@ public class Aluno {
 	Disciplina disciplina;
 	
 	public Aluno(String nomeCompleto, String email, int matricula) {
-		this.nomeCompleto = nomeCompleto;
-		this.email = email;
-		this.matricula = matricula;
+		System.out.println("Digite o nome completo do aluno: ");
+		this.nomeCompleto = sc.next();
+		System.out.println("Digite o email: ");
+		this.email = sc.next();
+		System.out.println("Digite a matrícula: ");
+		this.matricula = sc.nextInt();
+	}
+	
+	
+	public void statusAluno() {
+		System.out.println("Aluno: " + this.nomeCompleto + "\ne-mail: " 
+	                                       + this.email + "\nMatrícula: " + this.matricula);
 	}
 	
 	public String getNomeCompleto() {
-		return nomeCompleto;
+		return this.nomeCompleto;
 	}
 
 	public void setNomeCompleto(String nomeCompleto) {

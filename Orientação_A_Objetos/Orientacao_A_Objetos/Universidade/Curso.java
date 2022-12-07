@@ -1,31 +1,37 @@
 package Universidade;
 
+import java.util.Scanner;
+
 public class Curso {
+	Scanner sc = new Scanner(System.in);
 	//definição dos atributos
 	String nomeCurso,
-	       cargaHCurso,
 	       turno;
+	int cargaHCurso;
 	Aluno aluno;
 	Disciplina disciplina;
 	// metodo construtor alternativo
-	public Curso(String nomeCurso, String cargaHCurso, String turno) {
-		this.nomeCurso = nomeCurso;
-		this.cargaHCurso = cargaHCurso;
-		this.turno = turno;
+	public Curso(String nomeCurso, int cargaHCurso, String turno) {
+		System.out.println("Digite o nome do curso: ");
+		this.nomeCurso = sc.next();
+		System.out.println("Digite a carga horária do curso: ");
+		this.cargaHCurso = sc.nextInt();
+		System.out.println("Digite o turno do Curso: ");
+		this.turno = sc.next();
 	}
 	public String getNomeCurso() {
-		return nomeCurso;
+		return this.nomeCurso;
 	}
 
 	public void setNomeCurso(String nomeCurso) {
 		this.nomeCurso = nomeCurso;
 	}
 
-	public String getCargaHCurso() {
+	public int getCargaHCurso() {
 		return cargaHCurso;
 	}
 
-	public void setCargaHCurso(String cargaHCurso) {
+	public void setCargaHCurso(int cargaHCurso) {
 		this.cargaHCurso = cargaHCurso;
 	}
 

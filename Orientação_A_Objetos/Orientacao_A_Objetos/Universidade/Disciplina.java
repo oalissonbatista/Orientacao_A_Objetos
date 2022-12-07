@@ -52,8 +52,7 @@ public class Disciplina {
 		this.nomeDisciplina = nomeDisciplina1;
 	}
 	public String getNomeDisciplina() {
-		System.out.println("Nome da Disciplina: " + this.nomeDisciplina);
-		return nomeDisciplina; 
+		return this.nomeDisciplina; 
 	}
 	
 	public void getProfessor() {
