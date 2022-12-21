@@ -7,6 +7,7 @@ public class Principal {
 	
 	public static void main (String[] args) {
 		int resultado[] = {10,20,54,26,34,54};
+<<<<<<< HEAD
 		jogo1 = new MegaSena(10,20,54,26,34,54);
 		jogo2 = new MegaSena(1,26,14,25,29,36);
 		jogo1.setPremio(null);
@@ -14,6 +15,14 @@ public class Principal {
 		jogo1.setNumeroSorteio(0);
 		
 		System.out.println(jogo1.getValorAposta());
+=======
+		jogo1 = new MegaSena(10,10,54,26,34,54);
+		jogo2 = new MegaSena(1,26,14,25,29,36);
+		
+		jogo2.aposta();
+		
+		
+>>>>>>> 065ca8e (Atualização de código)
 		
 	}
 
