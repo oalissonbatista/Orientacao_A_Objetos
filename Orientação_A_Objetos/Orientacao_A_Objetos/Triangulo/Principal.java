@@ -12,7 +12,7 @@ public class Principal {
 		t2 = new Triangulo(10, 1, 2);
 		t3 = new Triangulo(2, 4, 8);
 		
-		System.out.println(t2.EhTriangulo());
+		System.out.println(t1.CalcularPerimetro());
 		
 		
 		
