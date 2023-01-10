@@ -3,6 +3,7 @@ package Triangulo;
 import java.util.Scanner;
 
 public class Lado {
+	Scanner sc = new Scanner(System.in);
 	private float medida;
 	
 	public Lado (float l) {
@@ -13,6 +14,6 @@ public class Lado {
 		return medida;
 	}
 	public void setMedida(float medida) {
-		this.medida = 	medida;
+		this.medida = medida;
 	}
 }
