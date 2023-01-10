@@ -24,7 +24,7 @@ public class Triangulo {
 		return perimetro;
 	}
 	public float CalcularArea() {
-		area = (l1.getMedida() + l2.getMedida()) /2;
+		area = (l1.getMedida() * l2.getMedida()) /2;
 		return area;
 	}
 	public boolean EhTriangulo() {
