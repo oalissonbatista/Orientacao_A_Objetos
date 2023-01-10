@@ -8,6 +8,7 @@ public class Principal {
 		pedido1 = new Pedido(3, 2);
 		pedido1.setCliente("Alisson");
 		pedido1.setData("21/03/2002");
+		pedido1.setTotal(124.99);
 		
 		pedido1.Status();
 		

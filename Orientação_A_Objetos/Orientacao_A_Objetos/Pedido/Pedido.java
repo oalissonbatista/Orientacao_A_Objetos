@@ -7,7 +7,7 @@ public class Pedido {
 	
 	private int numeroPedido;
 	private String data,cliente;
-	private float total;
+	private double total;
 	private Item camisetas,bermudas;
 	
 	public Pedido(int cam, int ber) {
@@ -42,11 +42,11 @@ public class Pedido {
 		this.cliente = cli;
 	}
 
-	public float getTotal() {
+	public double getTotal() {
 		return total;
 	}
 
-	public void setTotal(float t) {
+	public void setTotal(double t) {
 		this.total = t;
 	}
 
