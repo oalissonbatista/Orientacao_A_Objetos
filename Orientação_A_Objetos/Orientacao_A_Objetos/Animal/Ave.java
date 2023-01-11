@@ -32,6 +32,4 @@ public class Ave extends Animal {
 	public void fazerNinho() {
 		System.out.println("Construiu um ninho");
 	}
-	
-
 }

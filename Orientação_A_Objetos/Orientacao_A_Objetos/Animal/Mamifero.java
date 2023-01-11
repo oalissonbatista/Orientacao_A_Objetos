@@ -4,7 +4,7 @@ public class Mamifero extends Animal{
 	private String corPelo;
 	
 	
-	
+	//getters e setters
 	public void setCorPelo(String corPelo) {
 		this.corPelo = corPelo;
 	}

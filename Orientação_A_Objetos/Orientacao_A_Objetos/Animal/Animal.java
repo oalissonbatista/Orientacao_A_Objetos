@@ -1,14 +1,16 @@
 package Animal;
 
-public abstract class Animal {
+public abstract class Animal {             //abstrato é escrito em Itálico.
 	//atributos de animal
 	protected float peso;
-	protected int idade;
+	protected int idade; 
 	protected int membros;
 	//metodos de animal
 	public abstract void locomover();
-	public abstract void alimentar();
-	public abstract void emitirSom();
+	public abstract void alimentar();  //coloca abstrato para que cada um que usar, implemente o método.
+	public abstract void emitirSom();  //se a classe tem métodos abstratos, então ela é abstrata.
+	
+	// getters e setters
 	public float getPeso() {
 		return peso;
 	}
@@ -27,6 +29,4 @@ public abstract class Animal {
 	public void setMembros(int membros) {
 		this.membros = membros;
 	}
-	
-
 }
