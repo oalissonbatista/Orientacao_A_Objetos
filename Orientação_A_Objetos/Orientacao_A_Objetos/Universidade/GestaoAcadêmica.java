@@ -30,7 +30,9 @@ public class GestaoAcadêmica {
 				Aluno aluno1 = new Aluno(null, null, 0);
 				System.out.println("Aluno -"+ aluno1.getNomeCompleto() +"- Matriculado!");
 				
-			}else {
+			}else if(escolhaAluno == 2){
+				System.out.println();
+				
 			}
 			
 			

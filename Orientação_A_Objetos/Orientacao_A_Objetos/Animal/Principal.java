@@ -33,6 +33,8 @@ public class Principal {
 	Alisson.emitirSom();
 	Alisson.setCorPelo("Marrom");
 	Alisson.getCorPelo();
+	
+	
 	}
 
 }
