@@ -4,7 +4,8 @@ public class Principal {
 	
 	public static void main(String[] args) {
 	Mamifero urso = new Mamifero();
-	Ave periquito = new Ave();
+	Ave periquito = new Ave(0, 0, null, null);
+	periquito.membros= 4;
 	Reptil r = new Reptil();
 	Peixe p = new Peixe();
 	
@@ -16,7 +17,7 @@ public class Principal {
 	urso.emitirSom();
 	
 	periquito.idade = 3;
-	periquito.membros = 2;
+	periquito.membros = 4;
 	periquito.peso = (float) 0.100;
 	periquito.alimentar();
 	periquito.emitirSom();

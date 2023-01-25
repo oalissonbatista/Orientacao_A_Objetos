@@ -2,7 +2,16 @@ package Animal;
 
 public class Ave extends Animal {
 	private String corPena;
-
+	
+	
+	public Ave(float p,int i, String m, String cp) {
+		membros = m;
+		peso = p;
+		idade = i;
+		corPena = cp;
+		
+	}
+	
 	@Override
 	public void locomover() {
 		System.out.println("Voando");

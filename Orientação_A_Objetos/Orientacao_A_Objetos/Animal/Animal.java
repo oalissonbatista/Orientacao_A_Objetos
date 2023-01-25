@@ -4,7 +4,7 @@ public abstract class Animal {             //abstrato é escrito em Itálico.
 	//atributos de animal
 	protected float peso;
 	protected int idade; 
-	protected int membros;
+	protected String membros;
 	//metodos de animal
 	public abstract void locomover();
 	public abstract void alimentar();  //coloca abstrato para que cada um que usar, implemente o método.

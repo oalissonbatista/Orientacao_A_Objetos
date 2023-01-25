@@ -1,7 +1,7 @@
 package FiguraGeometrica;
 
 public class Trapezio extends Quadrilatero {
-	protected int baseMaior,altura;
+	private int baseMaior,altura;
 	
 	public Trapezio (int b, int  bM, int a) {
 		super(b);
