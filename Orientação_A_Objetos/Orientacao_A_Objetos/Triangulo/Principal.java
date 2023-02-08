@@ -1,5 +1,7 @@
 package Triangulo;
 
+import javax.swing.JOptionPane;
+
 public class Principal {
 	
 	private static Triangulo t1;
@@ -14,7 +16,7 @@ public class Principal {
 		
 		System.out.println(t1.CalcularPerimetro());
 		
-		
+		JOptionPane.showInputDialog("Ola");
 		
 		
 	}

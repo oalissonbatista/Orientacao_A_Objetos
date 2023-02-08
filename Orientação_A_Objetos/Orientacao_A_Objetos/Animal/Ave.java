@@ -4,7 +4,7 @@ public class Ave extends Animal {
 	private String corPena;
 	
 	
-	public Ave(float p,int i, String m, String cp) {
+	public Ave(float p,int i, int m, String cp) {
 		membros = m;
 		peso = p;
 		idade = i;
